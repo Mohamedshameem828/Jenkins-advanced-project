@@ -4,7 +4,7 @@ pipeline {
 
     environment {
         APP_NAME = 'jenkins-advanced-app'
-        IMAGE_NAME = 'YOUR-DOCKER-USERNAME/jenkins-advanced-app'
+        IMAGE_NAME = 'shameemdoc/jenkins-advanced-app'
         CONTAINER_NAME = 'jenkins-advanced-container'
         HOST_PORT = '8081'
     }
@@ -14,7 +14,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/YOUR-GITHUB-USERNAME/jenkins-advanced-project.git'
+                    url: 'https://github.com/Mohamedshameem828/Jenkins-advanced-project.git'
             }
         }
 
