@@ -1,10 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Jenkins Advanced CI/CD</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jenkins CI/CD 3D</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <h1>Jenkins Advanced Pipeline</h1>
-    <p>Version 1</p>
+    <!-- Animated Background -->
+    <div class="background">
+        <div class="orb orb1"></div>
+        <div class="orb orb2"></div>
+        <div class="grid"></div>
+    </div>
+
+    <main>
+
+        <div class="badge">
+            ⚡ CI/CD AUTOMATION
+        </div>
+
+        <h1>
+            Jenkins
+            <span>CI/CD</span>
+            Deployment
+        </h1>
+
+        <p class="subtitle">
+            Automated application deployment using
+            GitHub, Jenkins, Docker and AWS EC2
+        </p>
+
+        <!-- Pipeline -->
+        <section class="pipeline">
+
+            <div class="card">
+                <div class="icon">⌘</div>
+                <h2>GitHub</h2>
+                <p>Source Code</p>
+            </div>
+
+            <div class="arrow">➜</div>
+
+            <div class="card active">
+                <div class="icon">⚙</div>
+                <h2>Jenkins</h2>
+                <p>CI/CD Pipeline</p>
+            </div>
+
+            <div class="arrow">➜</div>
+
+            <div class="card">
+                <div class="icon">◈</div>
+                <h2>Docker</h2>
+                <p>Container</p>
+            </div>
+
+            <div class="arrow">➜</div>
+
+            <div class="card">
+                <div class="icon">☁</div>
+                <h2>AWS EC2</h2>
+                <p>Deployment</p>
+            </div>
+
+        </section>
+
+        <!-- Deployment Button -->
+        <button id="deployBtn" onclick="showMessage()">
+            <span>🚀</span>
+            Test Deployment
+        </button>
+
+        <!-- Message -->
+        <div id="message"></div>
+
+        <!-- Status -->
+        <div class="status">
+            <span class="dot"></span>
+            Pipeline Ready
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
